@@ -1,5 +1,7 @@
 # Route Finding Similar To Google Maps
 
+#### This was implemented under the valuable guidance of Prof David Crandall at Indiana University in B551 Elements of AI during Fall 2019.
+
 This part had 4 parts. It optimizes segments, distance, time, Mileage per gallon. One major challenge was to extract and store all the road segments and city gps to a python list and at the same time handling all the cases of inconsistency in data. We also had to  list the back and forth routes, for example, if a route is given from city A to B, we had to make sure our algorithm includes the path from B to A as well. In this process, we also avoided the loop of going from A to B and then again B to A.
 
 To maximize/minimize the cost function(s), we implemented this problem using the Priority Queue. We created four different functions for each of the cost functions and called them according to the command line input.
