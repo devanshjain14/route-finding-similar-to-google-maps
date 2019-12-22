@@ -19,3 +19,20 @@ We minimize the time by choosing the route segment which minimizes the total tra
 
 ### Optimizing Mileage Per Gallon( MPG )
 We maximize the MPG by choosing the route segment which maximizes the Mileage. Since, MPG is a function of velocity and average velocity is the total distance traveled upon total time, which is used to maximize the MPG
+
+
+### To run the code
+
+./route.py [start-city] [end-city] [cost-function]
+
+where 
+
+where:
+ start-city and end-city are the cities we need a route between.
+ cost-function is one of:
+- segments tries to nd a route with the fewest number of \turns" (i.e. edges of the graph)
+- distance tries to nd a route with the shortest total distance
+- time tries to nd the fastest route, for a car that always travels at the speed limit
+- mpg tries to nd the most economical route, for a car that always travels at the speed limit and whose mileage per gallon (MPG) is a function of its velocity (in miles per hour).
+
+Output will be corresponding to : [total-segments] [total-miles] [total-hours] [total-gas-gallons] [start-city] [city-1] [city-2] ... [end-city]
